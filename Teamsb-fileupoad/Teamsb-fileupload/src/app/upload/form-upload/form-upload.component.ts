@@ -37,4 +37,8 @@ export class FormUploadComponent implements OnInit {
     this.selectedFiles = undefined;
   }
 
+  /* addImagedata() {
+
+  }
+ */
 }

@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 //var bodyParser = require('body-parser');
+var AWS = require('aws-sdk');
+const env = require('./app/config/s3.env');
 
 const cors = require('cors')
 const corsOptions = {
@@ -21,9 +23,27 @@ const server = app.listen(8080, function () {
   console.log("App listening at http://%s:%s", host, port); 
 })
 
+function deleteFile() {
+  var bucketInstance = new AWS.S3();
+  var params = {
+      Bucket: env.Bucket,
+      Key: 'maradona1.jpg'
+  };
+  bucketInstance.deleteObject(params, function (err, data) {
+      if (err) {
+          
+          console.log("Check if you have sufficient permissions : "+err);
+      }
+      else {
+        console.log("File deleted successfully"+data);
+      }
+  });
+}
+
+deleteFile()
 
 
-
+/* 
 var MongoClient = require('mongodb').MongoClient;
 var assert=require('assert');
 //const { route } = require('./app/routers/s3.router.js');
@@ -62,3 +82,4 @@ router.post('/api/files/upload', function (req, res, next) {
 
   });
 });
+ */

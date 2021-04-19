@@ -8,6 +8,7 @@ exports.doUpload = (req, res) => {
 		Body: req.file.buffer
 	}
 	
+	//upload is from aws-sdk
 	s3.upload(params, (err, data) => {
 		if (err) {
 			res.status(500).send("Error -> " + err);
@@ -50,3 +51,22 @@ exports.doDownload = (req, res) => {
 				res.status(500).json({error:"Error -> " + err});
 		}).pipe(res);
 }
+
+
+/* 
+//The delete logic
+exports.doDelete = (req, res) => {
+    var bucketInstance = new AWS.S3();
+    var params = {
+        Bucket: env.Bucket,
+        Key: req.file.originalname
+    };
+    bucketInstance.deleteObject(params, function (err, data) {
+        if (data) {
+            console.log("File deleted successfully");
+        }
+        else {
+            console.log("Check if you have sufficient permissions : "+err);
+        }
+    });
+} */
