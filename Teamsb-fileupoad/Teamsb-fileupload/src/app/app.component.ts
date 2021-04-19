@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Team SB';
-  description = 'AWS S3 Upload with MEAN Stack.';
+  description = 'AWS S3 File Upload with MEAN Stack.';
 }
