@@ -1,6 +1,8 @@
 # Aws_S3_Upload
 Uploading Files in Aws S3 using MEAN Stack.
 
+## The app will be soon deployed to Heroku...
+
 # Installation 
 
 Use `npm install` in both Angular and Node folders to install the Node Modules.
