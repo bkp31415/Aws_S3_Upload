@@ -8,7 +8,7 @@ Use `npm install` in both Angular and Node folders to install the Node Modules.
 # Adding Credentials
 
 Create a file named s3.env.js in `Teamsb-fileupload-node\teamsb-fileupload-node\app\config\` directory
-and add th following contents:
+and add the following contents:
 
     const env = {
         AWS_ACCESS_KEY: 'your_access_key', 
