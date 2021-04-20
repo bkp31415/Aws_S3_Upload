@@ -120,9 +120,11 @@ h3{
 * {box-sizing: border-box;}
 nav {
     overflow: hidden;
-   background-color: #bd5eeca8;
+   background-color: #b951eca8;
    padding: 20px;
-   max-height: 90px;
+   max-height: auto;
+   background: transparent;
+
 }
 .links {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -135,13 +137,11 @@ nav {
    font-size: 18px;
    line-height: 30px;
    border-radius: 4px;
+   margin: 5px;
 
 }
 
-.link-text{
-    color: rgb(0, 0, 0);
-    font-size: xx-small;
-}
+
 nav .logo {
   
    
@@ -150,7 +150,7 @@ nav .logo {
    width: 200px;
    height:200px;
    background-repeat: no-repeat;
-   transform: scale(0.5,0.5) translate(-100px,-150px);
+
  
 
 
@@ -158,6 +158,7 @@ nav .logo {
 nav .links:hover {
    background-color: rgba(82, 238, 77, 0.822);
    color: rgb(42, 10, 94);
+   padding: 15px;
 }
 nav .selected {
    background-color: dodgerblue;
