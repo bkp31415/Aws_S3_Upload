@@ -124,6 +124,8 @@ nav {
    padding: 20px;
    max-height: auto;
    background: transparent;
+   border:solid;
+   border-color: rgba(0, 255, 255, 0.534);
 
 }
 .links {
@@ -167,13 +169,37 @@ nav .selected {
 .rightSection {
    float: right;
 }
+
+
+
+/* Media queries */
 @media screen and (max-width: 800px) {
    nav .links {
       float: none;
       display: block;
       text-align: left;
+    
    }
+   nav .selected {
+    background-color:rgb(0, 0, 0,0.5);
+    color: rgb(255, 255, 255);
+ }
+
+ nav .links:hover {
+   background-color: rgba(77, 219, 238, 0.822);
+   color: rgb(42, 10, 94);
+   padding: 15px;
+}
+ .wrapper{
+     position: relative;
+ }
+
+ nav{
+    border: none;
+ }
    .rightSection {
       float: none;
    }
 }
+
+
