@@ -23,7 +23,7 @@ const server = app.listen(8080, function () {
   console.log("App listening at http://%s:%s", host, port); 
 })
 
-function deleteFile() {
+/* function deleteFile() {
   var bucketInstance = new AWS.S3();
   var params = {
       Bucket: env.Bucket,
@@ -41,7 +41,7 @@ function deleteFile() {
 }
 
 deleteFile()
-
+ */
 
 /* 
 var MongoClient = require('mongodb').MongoClient;

@@ -22,7 +22,24 @@ export class UploadFileService {
     return this.http.request(req);
   }
 
+
+
   getFiles(): Observable<any> {
     return this.http.get('http://localhost:8080/api/files/all');
+  }
+
+
+
+  deleteFile(file) {
+
+    const formdata: FormData = new FormData();
+
+    formdata.append('file', file);
+
+    const req = new HttpRequest('POST', 'http://localhost:8080/api/files/deleteFile', formdata, {
+      reportProgress: false,
+      responseType: 'text'
+    });
+    return this.http.request(req);
   }
 }

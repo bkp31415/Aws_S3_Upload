@@ -53,7 +53,7 @@ exports.doDownload = (req, res) => {
 }
 
 
-/* 
+
 //The delete logic
 exports.doDelete = (req, res) => {
     var bucketInstance = new AWS.S3();
@@ -69,4 +69,4 @@ exports.doDelete = (req, res) => {
             console.log("Check if you have sufficient permissions : "+err);
         }
     });
-} */
+}

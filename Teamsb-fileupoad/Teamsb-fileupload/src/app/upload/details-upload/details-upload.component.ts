@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UploadFileService } from '../upload-file.service';
+
 
 @Component({
   selector: 'details-upload',
@@ -9,9 +11,12 @@ export class DetailsUploadComponent implements OnInit {
 
   @Input() fileUpload: string;
 
-  constructor() { }
+  constructor(private uploadService: UploadFileService) { }
 
   ngOnInit() {
+  }
+  delete(file) {
+    this.uploadService.deleteFile(file);
   }
 
 }
