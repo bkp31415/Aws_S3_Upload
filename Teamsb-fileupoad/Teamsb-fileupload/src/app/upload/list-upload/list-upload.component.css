@@ -1,0 +1,16 @@
+.button{
+    color: rgb(0, 0, 0); /* Text color */
+ 
+background-color: transparent; /* Remove background color */
+ 
+border: 3px solid rgb(13, 214, 13); /* Border thickness, line style, and color */
+ 
+border-radius: 5px; /* Adds curve to border corners */
+ 
+text-transform: uppercase; /* Make letters uppercase */
+
+padding: 8px;
+
+
+}
+

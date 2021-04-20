@@ -4,11 +4,12 @@
 
 <div [hidden]="!showFile">
   <div class="panel panel-primary">
-    <div class="panel-heading">List of Files</div>
-    <div *ngFor="let file of fileUploads | async">
+    <div class="panel-heading">List of Files in the S3 Bucket.</div>
+    <div *ngFor="let file of fileUploads | async">{{file.ProjectEvent}}
       <div class="panel-body">
-        <details-upload [fileUpload]='file'></details-upload>
+        <details-upload [fileUpload]='file' ></details-upload>
       </div>
     </div>
   </div>
-</div>
+</div> 
+ 
