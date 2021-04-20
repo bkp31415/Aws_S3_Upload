@@ -1,0 +1,17 @@
+.progress {
+    background-color: rgba(0, 0, 0, 0.671);
+    height: 25px;
+
+ }
+
+ .progress-bar{
+
+    background-color: rgb(16, 230, 230);
+    
+ }
+
+ .progress-bar-info{
+     color: black;
+     text-align: center;
+     font-weight: bold;
+ }
