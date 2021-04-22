@@ -1,6 +1,5 @@
 # Aws_S3_Upload
-Uploading Files in Aws S3 using MEAN Stack.
-(Still in development...)
+Uploading Files in Aws S3 using MEAN Stack.  (Still in development...)
 
 ## The app will be soon deployed to Heroku...
 
