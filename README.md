@@ -1,5 +1,5 @@
 # Aws_S3_Upload
-Uploading Files in Aws S3 using MEAN Stack.
+Uploading Files to Aws S3 using MEAN Stack.  (Still in development...)
 
 ## Frontend Demo
 
