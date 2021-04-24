@@ -3,7 +3,7 @@ Uploading Files to Aws S3 using MEAN Stack.  (Still in development...)
 
 ## Frontend Demo
 
-![alt Text](https://github.com/bkp31415/Aws_S3_Upload/tree/master/Teamsb-fileupoad/Teamsb-fileupload/src/app/images/frontend.gif.gif)
+![alt text](https://github.com/bkp31415/Aws_S3_Upload/tree/master/Teamsb-fileupoad/Teamsb-fileupload/src/app/images/frontend.gif)
 
 ## The app will be soon deployed to Heroku...
 
