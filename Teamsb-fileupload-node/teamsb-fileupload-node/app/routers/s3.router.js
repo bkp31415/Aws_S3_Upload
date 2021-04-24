@@ -12,6 +12,6 @@ router.get('/api/files/all', awsWorker.listKeyNames);
 
 router.get('/api/files/:filename', awsWorker.doDownload);
 
-router.delete('/api/files/deleteFile',deleteFile.single("file"),awsWorker.doDelete);
+router.post('/api/files/deleteFile',deleteFile.single("file"),awsWorker.doDelete);
  
 module.exports = router;

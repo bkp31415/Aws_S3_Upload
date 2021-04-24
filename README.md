@@ -1,6 +1,10 @@
 # Aws_S3_Upload
 Uploading Files in Aws S3 using MEAN Stack.
 
+## Frontend Demo
+
+![Alt Text](https://github.com/bkp31415/Aws_S3_Upload/tree/master/Teamsb-fileupoad/Teamsb-fileupload/src/app/images/frontend.gif)
+
 ## The app will be soon deployed to Heroku...
 
 # Installation 
@@ -65,3 +69,6 @@ To get more help on the NodeJs CLI use `npm help <term> [<terms..>]` or go check
 [Express api v4.x Docs](https://expressjs.com/en/4x/api.html)
 
 [Mongodb](https://docs.mongodb.com/)
+
+[grokonez](https://grokonez.com)
+[grokonez-github](https://github.com/grokonez)
